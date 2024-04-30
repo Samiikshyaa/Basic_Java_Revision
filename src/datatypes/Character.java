@@ -12,7 +12,7 @@ public class Character {
 	System.out.println("Enter the character");
 	ch = sc.next().charAt(0);
 	
-	// After Space evrything is ommitted
+	// Only the word before space; ie. only one word allowed
 	System.out.println("Enter the string");
 	s = sc.next();
 	
