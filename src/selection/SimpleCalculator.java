@@ -3,7 +3,9 @@ package selection;
 import java.util.Scanner;
 
 public class SimpleCalculator {
+	
 	public static void main(String[] args) {
+		
 		int result = 0, difference = 0;
 		String again= "Y";
 		Scanner sc = new Scanner(System.in);
