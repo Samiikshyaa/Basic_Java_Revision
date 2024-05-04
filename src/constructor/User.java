@@ -16,7 +16,7 @@ public class User {
 	}
 	
 	User(){
-		this("Sita","Rs123");
+		this("Sita","Rs123");//calling parameterized constructor
 		uname = "Samikshya";
 		psw = "T123";
 		

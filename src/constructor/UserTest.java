@@ -7,6 +7,5 @@ public class UserTest {
 		u.print();
 		User u1 = new User("Hari","H123");
 		u1.print();
-		
 	}
 }
