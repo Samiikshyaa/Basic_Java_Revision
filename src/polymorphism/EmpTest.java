@@ -14,7 +14,7 @@ import java.util.Scanner;
 
 public class EmpTest {
 	public static void main(String[] args) {
-		Employee[] employees = new Employee[5];
+		Employee[] employees = new Employee[10];
 		
 		Scanner sc = new Scanner(System.in);
 		

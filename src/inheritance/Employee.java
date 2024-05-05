@@ -7,10 +7,11 @@ public class Employee {
 	int salary;
 	String company;
 	
-	void printing() {
+	void print() {
 		System.out.println("ID: "+ id);
 		System.out.println("Name: "+name);
 		System.out.println("Salary: "+salary);
 		System.out.println("Company: "+ company);
 	}
+	
 }
