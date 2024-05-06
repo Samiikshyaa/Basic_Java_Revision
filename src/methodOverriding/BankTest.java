@@ -10,7 +10,7 @@ public class BankTest {
 //		nb.getInterestRate();
 		
 		//upcasting
-		CentralBank b = new CentralBank();		
+		CentralBank b = new PrabhuBank();		
 		
 		BankTest bt = new BankTest();
 		bt.printBankInfo(b);
