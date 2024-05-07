@@ -1,11 +1,11 @@
 package methodOverriding;
 
 public class CentralBank {
-	void getBankName() {
+	 void getBankName() {
 		System.out.println("Central Bank");
 	}
 	
-	void getInterestRate() {
+	 void getInterestRate() {
 		System.out.println(0);
 	}
 	

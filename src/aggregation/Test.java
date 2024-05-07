@@ -1,4 +1,4 @@
-package aggregation;
+package aggregation; //Has a relationship
 
 public class Test {
 	
