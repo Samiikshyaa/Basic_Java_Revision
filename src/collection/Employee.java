@@ -4,6 +4,8 @@ public class Employee {
 	private int Id;
 	private String name;
 	private String post;
+	int salary;
+	
 	public int getId() {
 		return Id;
 	}
@@ -25,6 +27,13 @@ public class Employee {
 	@Override
 	public String toString() {
 		return "Employee [Id=" + Id + ", name=" + name + ", post=" + post + "]";
+	}
+	
+	public int getSalary() {
+		return salary;
+	}
+	public void setSalary(int salary) {
+		this.salary = salary;
 	}
 	
 }
