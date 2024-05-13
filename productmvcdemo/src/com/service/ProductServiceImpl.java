@@ -8,15 +8,16 @@ import com.model.Product;
 public class ProductServiceImpl implements ProductService {
 
 	static List <Product> plist = new ArrayList<>();
+	
 	@Override
-	public void add(Product p) {
+	public void addProd(Product p) {
 		
 		plist.add(p);
 		System.out.println("Product added"+ plist.size());		
 	}
 
 	@Override
-	public void delete(int index) {
+	public void deleteProd(int index) {
 		plist.remove(index);
 		System.out.println(" Product Deleted ");
 		
@@ -25,8 +26,7 @@ public class ProductServiceImpl implements ProductService {
 	@Override
 	public List<Product> getProduct() {
 		System.out.println("The products are");
-		return plist;
-		
+		return plist;	
 	}
 
 }
