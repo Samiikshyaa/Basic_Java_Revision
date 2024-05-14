@@ -21,12 +21,16 @@ Remember to add the mysql jar file.
 1. Register driver
    Class.forName("com.mysql.cj.jdbc.Driver")
 2. GetConnection
-   Connection con = getConnection("url[jdbc:mysql://localhost/3306/testdb]","username","password")
+   Connection con = getConnection("url","username","password")
 
-   where 3306 is default port
-         testdb is database name
 
-3. Insert or Select or Update or Delete
+    url[jdbc:mysql://localhost/3306/testdb]
+
+       where 3306 is default port
+   
+             testdb is database name
+
+4. Insert or Select or Update or Delete
 
 
 ##### Insert
