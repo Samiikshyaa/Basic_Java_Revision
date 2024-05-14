@@ -18,9 +18,11 @@ For maintaining mvc, the classes and packages are organized in following directo
 Remember to add the mysql jar file.
 
 ### Pattern for JDBC: 
-1. Register driver
+1. Register driver:
+   
    Class.forName("com.mysql.cj.jdbc.Driver")
 2. GetConnection
+   
    Connection con = getConnection("url","username","password")
 
 
@@ -30,7 +32,8 @@ Remember to add the mysql jar file.
    
              testdb is database name
 
-4. Insert or Select or Update or Delete
+
+3. Insert or Select or Update or Delete
 
 
 ##### Insert
