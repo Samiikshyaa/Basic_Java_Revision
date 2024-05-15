@@ -1,50 +1,71 @@
 package com.view;
 
 import java.util.List;
+import java.util.Scanner;
 
 import com.model.Product;
 import com.service.ProductService;
 import com.service.ProductServiceImpl;
 
 public class Test {
-	public static void main(String[] args) {
-		add();
-		getProduct();
-		delete();
-		getProduct();
-	}
 
+	public static void main(String[] args) {
+//		add();
+		getAll();
+		delete();
+		getAll();   //after deleted
+//		getAll();
+	}
+	
+	
+//	add product
 	static void add() {
 		ProductService ps = new ProductServiceImpl();
-			
+		char flag='y';
+		Scanner  sc = new Scanner(System.in);
+		
+		
+		do {
 		Product p = new Product();
-			p.setId(1);
-			p.setName("Mobile");
-			p.setCompany("Apple");
-			p.setPrice(100000);		
+		
+		System.out.println("Enter id");
+		p.setId(sc.nextInt());
+		
+		System.out.println("Enter name");
+		p.setName(sc.next());
+		
+		System.out.println("Enter price");
+		p.setPrice(sc.nextInt());
+		
+		System.out.println("Enter company");
+		p.setCompany(sc.next());
 		
 		ps.addProd(p);
 		
-		Product p1 = new Product();
-		p1.setId(2);
-		p1.setName("Laptop");
-		p1.setCompany("Lenevo");
-		p1.setPrice(70000);		
-	
-		ps.addProd(p1);
+		System.out.println("Do you want to add more? [y/n] ");
+		flag = sc.next().charAt(0);
+		
+		}while(flag == 'y');
 	}
 	
+// delete product
 	static void delete() {
 		ProductService ps = new ProductServiceImpl();
-			ps.deleteProd(0);
-		
-	}
+		Scanner sc =  new Scanner(System.in);
+		System.out.println("Enter the id you want to delete: ");
+		int s = sc.nextInt();
+		ps.deleteProd(s);
+	}	
 	
-	static void getProduct(){
+// get all products	
+	static void getAll() {
 		ProductService ps = new ProductServiceImpl();
-		List<Product>	plist = ps.getProduct();
-		System.out.println(plist);
+//		List<Product> plist = ps.getAllProducts();
+//		System.out.println(plist);
+		ps.getProduct();
 	}
 }
+
+
 
 
