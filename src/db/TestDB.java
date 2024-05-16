@@ -67,6 +67,7 @@ public class TestDB {
 //		
 //		System.out.println("Deleted");
 		
+		//-------------------------Count SQL----------------
 		String sql = "select count(*) from user";
 		Statement stm = con.createStatement();
 		ResultSet rs = stm.executeQuery(sql);
