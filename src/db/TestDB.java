@@ -32,9 +32,9 @@ public class TestDB {
 //		con.close();
 //		
 //		System.out.println("Data Inserted");
-		
-		
-		
+//		
+//		
+//		
 //		//---------------------Select SQL-------------------
 //		// 1. write query
 //		String sql = "select * from user";
@@ -51,7 +51,7 @@ public class TestDB {
 //			System.out.println("Password: "+ rs.getString("password"));
 //			System.out.println();
 //		}
-		
+//		
 //		//------------------------Update SQL--------------
 //		String sql = "Update user set username = 'Ramesh' where username ='Ram'";
 //		Statement stm = con.createStatement();
@@ -61,11 +61,19 @@ public class TestDB {
 //		
 		
 		//-------------------------DELETE SQL--------------
-		String sql = "Delete from user where id = '6'";
-		Statement stm = con.createStatement();
-		stm.execute(sql);
+//		String sql = "Delete from user where id = '6'";
+//		Statement stm = con.createStatement();
+//		stm.execute(sql);
+//		
+//		System.out.println("Deleted");
 		
-		System.out.println("Deleted");
+		String sql = "select count(*) from user";
+		Statement stm = con.createStatement();
+		ResultSet rs = stm.executeQuery(sql);
+		
+		rs.next();
+		int count =  rs.getInt(1);
+		System.out.println("Count is: "+count);
 		
 	}
 	
