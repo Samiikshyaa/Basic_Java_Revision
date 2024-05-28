@@ -1,7 +1,6 @@
 package methodOverriding;
 
 public class LaxmiBank extends CentralBank{
-	
 	@Override
 	void getBankName() {
 		System.out.println("Laxmi Bank");

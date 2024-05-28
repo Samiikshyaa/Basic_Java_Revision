@@ -4,7 +4,6 @@ public class Programmer extends Employee {
 	String proglang;
 	int bonus;
 	String project;
-
 	
 	void print() {
 //		print(); //stack overflow
@@ -13,4 +12,6 @@ public class Programmer extends Employee {
 		System.out.println("Bonus: "+ bonus);
 		System.out.println("Project: "+ project);
 	}
+	
+
 }
