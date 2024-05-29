@@ -9,6 +9,6 @@ public class Test3 {
 			reverse =str.charAt(i) + reverse;
 		}
 		System.out.println(reverse);
-		System.out.println("Herllo");
+		System.out.println("Hello");
 	}
 }
