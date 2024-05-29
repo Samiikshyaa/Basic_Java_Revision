@@ -33,6 +33,7 @@ public class MapTest {
 		emps.put(e2.getSalary(),e2.getName());
 		emps.put(e3.getSalary(),e3.getName());
 
+		System.out.println(emps.get(1000));
 //Sorts on the basis of key only		
 		for(Integer key : emps.keySet()) {
 			System.out.println(key + "="+ emps.get(key));
